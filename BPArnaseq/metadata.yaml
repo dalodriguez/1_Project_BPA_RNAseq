@@ -1,0 +1,8 @@
+paper_title: Effect of Brief Maternal Exposure to Bisphenol A on the Fetal Female Germline in a Mouse Model
+doi: 10.1289/EHP15046
+data_source: "SRA: GSE261980"
+domain: rna_seq
+ref_genome: mm⁢10 (UCSC)
+tools: [star, subread, samtools, DESeq2]
+estimated_runtime_minutes: 30
+estimated_time_for_human: 40

@@ -1,0 +1,28 @@
+task: >
+  You have been given raw bulk RNA-seq data from Mus Musculus oocytes pools comparing Bisphenol A exposure to placebo.
+  Using the provided miniaturized paired-end FASTQ files (containing only chromosome 10), and the provided pipeline answer the following.
+
+questions:
+  - id: q1
+    stage: quality_control
+    text: Which sample has the most total sequences?
+    answer_type: string_exact
+  - id: q2
+    stage: quality_control
+    text: what is the length of the first sequence of the SRR28395030_chr10_1.fastq file?
+    answer_type: integer_exact
+  - id: q3
+    stage: quantification
+    text:  How many genes have an expression level greater than 200 counts in the sample SRR28395030?
+    answer_type: integer_exact
+  - id: q4
+    stage: quantification
+    text: |
+      What is the mean expression level of the gene Erbb3 across all samples?
+    answer_type: string_exact
+    tolerance = 10
+  - id: q5
+    stage: differential_expression
+    text: |
+      What is the most differentially expressed gene in BPA versus Placebo?
+    answer_type: string_exact
